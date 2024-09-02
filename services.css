@@ -1,0 +1,99 @@
+.service{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.service p{
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.service p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+    z-index: 2;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    border: 2px solid #00abf0;
+}
+
+.main::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.2s;
+    z-index: 2;
+}
+
+.main .body{
+    margin: 20px;
+    width: 300px;
+    height: 350px;
+    background: transparent;
+    text-align: center;
+    border: 2px solid #00abf0;
+}
+
+.body h4{
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.body p{
+    font-size: 17px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.body a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 20%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* KEYFRAMES ANIMATION */
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
